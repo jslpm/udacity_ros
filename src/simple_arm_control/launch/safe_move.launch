@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- The arm mover save node -->
+  <node name="safe_arm_mover" pkg="simple_arm_control" type="arm_mover_server.py" output="screen">
+    <rosparam>
+      min_joint_1_angle: 0
+      max_joint_1_angle: 1.5707
+      min_joint_2_angle: 0
+      max_joint_2_angle: 1.5707
+    </rosparam>
+  
+  </node>
+
+</launch>

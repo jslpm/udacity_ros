@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- start safe_move service server -->
+  <include file="$(find simple_arm_control)/launch/safe_move.launch"/>
+  
+  <!-- start look_away node -->
+  <node name="look_away" pkg="simple_arm_control" type="look_away.py"/>
+  
+</launch>
